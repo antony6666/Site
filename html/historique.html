@@ -1,0 +1,58 @@
+<!DOCTYPE html>  <!-- Cette balise indique au navigateur que la page est écrite en HTML5 -->
+<html lang="fr">
+	<head>
+		<title>L'historique</title>		<!-- Ces balises encadrent le titre qui va apparaitre dans l’onglet du navigateur. -->
+		<meta charset="utf-8">		<!-- On précise l’encodage permettant en particulier d’utiliser les lettres accentuées. -->
+		<link rel="stylesheet" href="MonStyle.css">
+	</head>
+	
+	
+	<body>
+		<header>
+			<div class="element">Année 2019-2020</div>
+			<div class="element">Internet et les Réseaux informatiques</div>
+			<div class="element">Lycée René Descartes</div>
+		
+		</header>
+		<nav>
+			<ul>
+				<li class="Accueil"><a href="Index.html">Accueil</a></li>
+				<li class="internet"><a href="#">Internet</a>		<!-- L'élément "href" ne ramène à aucune page. -->
+					<ul class="submenu">
+						<li><a href="historique.html">Son Histoire</a></li>		<!-- L'élément "href" ramène sur la page indiquée. -->
+						<li><a href="fonctionnement.html">Son Fonctionnement</a></li>
+						<li><a href="differents_serv.html">Les Différents Services Réalisés</a></li>
+						<li><a href="web.html">Le WEB</a></li>
+					</ul>
+				</li>
+				<li class="RI"><a href="#">Les Réseaux Informatiques</a>
+					<ul class="submenu">
+						<li><a href="notion.html">Les Notions de Réseaux</a></li>
+						<li><a href="adressage.html">Adressage</a></li>
+						<li><a href="hub.html">HUB</a></li>
+						<li><a href="diff_reseaux.html">Les Différents Réseaux</a></li>
+					</ul>
+				</li>
+				<li class="Conclusion"><a href="conclusion.html">Conclusion</a></li>
+			</ul>
+		</nav>
+		<div class="gen1">
+			<div class="gen2">
+				<h1>L'historique</h1>
+				<p>
+					Au début, c’est l’US Air Force qui demande, en 1962, à un petit groupe de chercheurs de créer un réseau de communication militaire capable de résister à une attaque nucléaire.<br/><br/>
+					Comme créer un système centralisé était vulnérable car la destruction de son noyau provoquerait l'anéantissement des communications, Paul Baran eu l'idée, en 1964, de créer un réseau sous forme de grande toile. Il mit donc au point un réseau hybride d'architectures étoilées et maillées dans lequel les données se déplaceraient de façon dynamique, en « cherchant » le chemin le moins encombré, et en « patientant » si toutes les routes étaient encombrées. Cette technologie fut appelée « packet switching ».<br/><br/>
+					En 1969, S. Crocker met au point le système RFC,  « Request for Comments ». Il s'agit de documents présentés sous forme de note, permettant aux chercheurs d'échanger leurs travaux.<br/><br/>
+					C’est 5 ans plus tard, en 1969, que le réseaux expérimental ARPANET fut créé par l'ARPA (Advanced Research Projects Agency dépendant du DOD, Department of Defense) afin de relier quatre instituts universitaires, tout cela indépendamment de tout objectif militaire. Ce réseaux est aujourd'hui considéré comme le réseau précurseur d'internet, car il comportait déjà à l'époque certaines caractéristiques fondamentales du réseau actuel. Comme détruire un ou plusieurs noeuds sans perturber le fonctionnement et la communication entre machines se faisait sans machine centralisée intermédiaire.<br/><br/>
+					En 1971, Ray Tomlinson mit au point un nouveau mode de communication : le courrier électronique. Par ailleurs, le caractère « @ » servait déjà à séparer le nom de l'utilisateur du nom de la machine dans les adresses. Un ans plus tard, Lawrence G. Roberts améliora les possibilités de la création de Ray Tomlinson en développant la première application permettant de lister, de lire de manière sélective, d'archiver, de répondre ou de faire suivre un e-mail. C'est également en 1972 que le réseau ARPANET fut présenté pour la première fois au grand public.<br/><br/>
+					Jusqu’en 1972, c'était le protocole NCP qui était utilisé et il ne permettait pas de gérer de contrôle d'erreur et était donc par principe uniquement utilisable sur le réseau ARPANET. Quand Bob Kahn arriva à l'ARPA en 1972 il commença à travailler sur les bases d'un nouveau protocole, baptisé TCP, permettant d'acheminer des données sur un réseau en les fragmentant en petits paquets. En 1976, le DoD décida de déployer le protocole TCP sur le réseau ARPANET, composé de 111 machines reliées entre elles. En 1978, le protocole TCP fut scindé en deux protocoles : TCP et IP, pour constituer ce qui allait devenir la suite TCP/IP.<br/><br/>
+					C’est 8 ans plus tard, en 1980, Tim Berners-Lee, un chercheur au CERN de Genève, mit au point un système de navigation hypertexte et développa un logiciel baptisé “Enquire” permettant de naviguer selon ce principe. Fin 1990, Tim Berners-Lee met au point le protocole HTTP (Hyper Text Tranfer Protocol), ainsi que le langage HTML (HyperText Markup Language) permettant de naviguer à l'aide de liens hypertextes, à travers les réseaux. Le World Wide Web est né.<br/><br/>
+					Dès 1984, le système de nommage DNS sera mit en oeuvre (qui est encore utilisé de nos jours). Il consiste à pallier le manque de souplesse du nommage par table de nommage, demandant la mise à jour manuelle des correspondances entre le noms de machines et leur adresse sur des fichiers textes sur chacune des machines.
+				</p>
+			</div>
+		</div>
+		<footer>
+			<br/>LAIGNEAU Antony
+		</footer>
+	</body>
+</html>	

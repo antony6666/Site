@@ -1,0 +1,120 @@
+<!DOCTYPE html>  <!-- Cette balise indique au navigateur que la page est écrite en HTML5 -->
+<html lang="fr">
+	<head>
+		<title>L'adressage</title>		<!-- Ces balises encadrent le titre qui va apparaitre dans l’onglet du navigateur. -->
+		<meta charset="utf-8">		<!-- On précise l’encodage permettant en particulier d’utiliser les lettres accentuées. -->
+		<link rel="stylesheet" href="MonStyle.css">
+	</head>
+	
+	
+	<body>
+		<header>
+			<div class="element">Année 2020-2021</div>
+			<div class="element">Internet et les Réseaux informatiques</div>
+			<div class="element">Lycée Saint-Sauveur</div>
+		
+		</header>
+		<nav>
+			<ul>
+				<li class="Accueil"><a href="Index.html">Accueil</a></li>
+				<li class="internet"><a href="#">Internet</a>		<!-- L'élément "href" ne ramène à aucune page. -->
+					<ul class="submenu">
+						<li><a href="historique.html">Son Histoire</a></li>		<!-- L'élément "href" ramène sur la page indiquée. -->
+						<li><a href="fonctionnement.html">Son Fonctionnement</a></li>
+						<li><a href="differents_serv.html">Les Différents Services Réalisés</a></li>
+						<li><a href="web.html">Le WEB</a></li>
+					</ul>
+				</li>
+				<li class="RI"><a href="#">Les Réseaux Informatiques</a>
+					<ul class="submenu">
+						<li><a href="notion.html">Les Notions de Réseaux</a></li>
+						<li><a href="adressage.html">Adressage</a></li>
+						<li><a href="hub.html">HUB</a></li>
+						<li><a href="diff_reseaux.html">Les Différents Réseaux</a></li>
+					</ul>
+				</li>
+				<li class="Conclusion"><a href="conclusion.html">Conclusion</a></li>
+			</ul>
+		</nav>
+		<div class="gen1">
+			<div class="gen2">
+				<h1>L'Adressage</h1>
+				<p>
+					Elle correspond à l’adresse ip, c’est un numéro d’identification adressé à chaque appareil du réseau(ordinateur, téléphone, modems…)<br/>
+					Elle indique l’ordinateur sur le réseau et le réseau local adressé (celui sur lequel l'ordinateur est).
+				</p>
+				<h4>
+					Il y a plusieurs types d’adresses réseaux :
+				</h4>
+				<ul>
+					<li>l’adresse de réseau(c’est la plus petite adresse du réseau)</li>
+					<li>l’adresse de diffusion : quand une information est envoyer à cette adresse elle est envoyer à tous les ordinateurs du réseaux.</li>
+				</ul>
+				<p>
+					Les adresses IP des serveurs peuvent être converties en nom de domaine comme les noms de domaine aussi peuvent être convertis en adresse IP.<br/>
+					Une adresse possède donc un ID réseau
+				</p>
+				<h4>
+					Il y a différents types d’adresse IP :
+				</h4>
+				<ul>
+					<li>
+						<p class="ip">
+							L’adresse IP privée :
+						</p>
+						<p class="ip2">
+							Cette adresse ne fonctionne pas sur internet.<br/>
+							Elle n’est qu'utilisée sur un réseau qui utilise les plages d'adresses IP non accessibles depuis Internet, ce qui sert à renforcer la sécurité d’internet. Ces adresses sont utilisées dans les entreprises. L’adresse est unique au réseau local.<br/>
+							L’adresse privée dans des classes comme les classes A, B et C donc deux entreprises différentes qui ne sont pas raccordées entre elles peuvent avoir le même adressage.
+						</p>
+					</li> 
+					<li>
+						<p class="ip">
+							L’adresse IP publique :
+						</p>
+						<p class="ip2">
+							Elles sont attribués à des ordinateurs pour pouvoir communiquer avec d’autres ordinateurs entre eux sur internet.<br/>
+							L'adresse IP publique est délivrée par notre fournisseur d’accès à internet au moment de l’installation et de la synchronisation de notre box.<br/>
+							L’adresse IP publique est une adresse qui est unique au niveau mondial contrairement à l’adressage privé.
+						</p>
+					</li>
+				</ul><br/>
+				<h4>
+					Voici les diffèrentes classes des adresses IP privées :
+				</h4>
+				<ul>
+					<li>
+						<p class="class_g">
+							classe A :
+						</p>
+						<p class="class_s">
+							Une adresse IP de classe A dispose d'un seul octet pour identifier le réseau et de trois octets pour identifier les machines sur ce réseau. Cette classe peut comporter jusqu’à 23×8-2, soit 16 777 214 adresses. Le premier octet d’adresse IP d’une classe A commence toujours par la séquence de bits 0, il est donc compris entre 0 et 127 mais certaines valeurs sont réservées à des usages particuliers.<br/>
+							Les réseaux disponibles en classe A sont donc les réseaux allant de l’adresse IP 0.0.0.0 à 127.255.255.255 (adresses privées et publiques).
+						</p>
+					</li>
+					<li>
+						<p class="class_g">
+							classe B :
+						</p>
+						<p class="class_s">
+							Une adresse IP de classe B dispose de deux octets pour identifier le réseau et de deux octets pour identifier les machines sur ce réseau. Cette classe peut comporter jusqu’à 22×8-2, soit 65 534 adresses. Le premier octet d’adresse IP d’une classe B commence toujours par la séquence de bits 10, il est donc compris entre 128 et 191.<br/>
+							Les réseaux disponibles en classe B sont donc les réseaux allant de l’adresse IP 128.0.0.0 à 191.255.255.255 (adresses privées et publiques).
+						</p>
+					</li>
+					<li>
+						<p class="class_g">
+							classe C :
+						</p>
+						<p class="class_s">
+							Une adresse IP de classe C dispose de trois octets pour identifier le réseau et d’un seul octet pour identifier les machines sur ce réseau. Cette classe peut comporter jusqu’à 28-2, soit 254 adresses. Le premier octet d’adresse IP d’une classe C commence toujours par la séquence de bits 110, il est donc compris entre 192 et 223.<br/>
+							Les réseaux disponibles en classe C sont donc les réseaux allant de l’adresse IP 192.0.0.0 à 223.255.255.255 (adresses privées et publiques).
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<footer>
+			<br/>LAIGNEAU Antony
+		</footer>
+	</body>
+</html>	

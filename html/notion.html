@@ -1,0 +1,167 @@
+<!DOCTYPE html>  <!-- Cette balise indique au navigateur que la page est écrite en HTML5 -->
+<html lang="fr">
+	<head>
+		<title>Les Notions De Réseaux</title>		<!-- Ces balises encadrent le titre qui va apparaitre dans l’onglet du navigateur. -->
+		<meta charset="utf-8">		<!-- On précise l’encodage permettant en particulier d’utiliser les lettres accentuées. -->
+		<link rel="stylesheet" href="MonStyle.css">
+	</head>
+	
+	
+	<body>
+		<header>
+			<div class="element">Année 2020-2021</div>
+			<div class="element">Internet et les Réseaux informatiques</div>
+			<div class="element">Lycée Saint-Sauveur</div>
+		
+		</header>
+		<nav>
+			<ul>
+				<li class="Accueil"><a href="Index.html">Accueil</a></li>
+				<li class="internet"><a href="#">Internet</a>		<!-- L'élément "href" ne ramène à aucune page. -->
+					<ul class="submenu">
+						<li><a href="historique.html">Son Histoire</a></li>		<!-- L'élément "href" ramène sur la page indiquée. -->
+						<li><a href="fonctionnement.html">Son Fonctionnement</a></li>
+						<li><a href="differents_serv.html">Les Différents Services Réalisés</a></li>
+						<li><a href="web.html">Le WEB</a></li>
+					</ul>
+				</li>
+				<li class="RI"><a href="#">Les Réseaux Informatiques</a>
+					<ul class="submenu">
+						<li><a href="notion.html">Les Notions de Réseaux</a></li>
+						<li><a href="adressage.html">Adressage</a></li>
+						<li><a href="hub.html">HUB</a></li>
+						<li><a href="diff_reseaux.html">Les Différents Réseaux</a></li>
+					</ul>
+				</li>
+				<li class="Conclusion"><a href="conclusion.html">Conclusion</a></li>
+			</ul>
+		</nav>
+		<div class="gen1">
+			<div class="gen2">
+				<h1>Les Notions de Réseaux</h1>
+				<p>
+					La notion de réseau est aujourd’hui très répandue, dans plusieurs domaines et récemment les réseaux de télécommunication se sont multipliés.<br/><br/>
+					On appelle réseau informatique, un ensemble d’équipements informatiques interconnectés et échangeant des informations sous forme de données binaires. Un réseau permet :
+				</p>
+				<ul>
+					<li>La communication de plusieurs ordinateurs entre eux ;</li>
+					<li>Le partage de fichiers, d’imprimantes ;</li>
+					<li>Le jeu à plusieurs ;</li>
+					<li>L’unicité de l’information (pour des fichiers souvent mis à jour, le réseau permet de mettre à jour tous les PC le constituant) ;</li>
+					<li>Une organisation plus efficace et donc une meilleure productivité.</li>
+				</ul>
+				<h4>
+					Il existe différents réseaux :
+				</h4>
+				<ul>
+					<li>Les réseaux Peer to Peer (deux ordinateurs reliés seulement donc ils ont une "fonction" égale sur le réseau) ;</li>
+					<li>Les réseaux Client/serveur. Ils sont organisés avec des postes serveurs qui fournissent l’information au client.</li>
+				</ul>
+				<p>
+					Il existe plusieurs organisations de réseaux, qui ont chacune des capacités et des contraintes différentes. On choisira donc une topologie plus qu’une autre en fonction du réseau à mettre en place :
+				</p>
+				
+					La topologie en bus ;<img src="topologie_en_bus.png" alt="Exemple de topologie en bus" class="topo">
+					La topologie en étoile ;<img src="topologie_en_étoile.png" alt="Exemple de topologie en étoile" class="topo">
+					La topologie en anneau ;<img src="topologie_en_anneaux.gif" alt="Exemple de topologie en anneaux" class="topo">
+				
+				<h4>
+					Il existe aussi plusieurs types de réseaux. Les plus fréquent sont :
+				</h4>
+				<ul>
+					<li>Les LAN ;</li>
+					<li>Les MAN ;</li>
+					<li>Les WAN</li>
+				</ul>
+				<h4>
+					Les principaux composants d’interconnexion sont :
+				</h4>
+				<ul>
+					<li>
+						<p class="pn1">
+							Carte réseau : 
+						</p>
+						<p class="pn2">
+							La carte réseau est le matériel de base indispensable, qui traite tout au sujet de la communication dans le monde du réseau.
+						</p>
+					</li>
+					<li>
+						<p class="pn1">
+							Concentrateur (hub) :
+						</p>
+						<p class="pn2">
+							Le concentrateur permet de relier plusieurs ordinateurs entre eux, mais on lui reproche le manque de confidentialité.
+						</p>
+					</li>
+					<li>
+						<p class="pn1">
+							Commutateur (switch) :
+						</p>
+						<p class="pn2">
+							Le commutateur fonctionne comme le concentrateur, sauf qu’il transmet des données aux destinataires en se basant sur leurs adresses MAC (adresses physiques). Chaque machine reçoit seulement ce qui lui est adressé.
+						</p>
+					</li>
+					<li>
+						<p class="pn1">
+							Routeur :
+						</p>
+						<p class="pn2">
+							Le routeur permet d’assurer la communication entre différents réseaux pouvant être fondamentalement différents (réseau local et Internet).
+						</p>
+					</li>
+					<li>
+						<p class="pn1">
+							Le proxy :
+						</p>
+						<p class="pn2">
+							Dans un réseaux informatique, il est appelé un serveur proxy. C’est souvent un logiciel ou une machine qui est entre le client et le serveur consulté. Il sert à faire la liaison entre le client et le serveur. La plupart des cas, le serveur proxy est utilisé entre un réseau local et internet. Le rôle principal d’un proxy est d’assurer l’accélération de la navigation, la journalisation des requêtes, la sécurité du réseau local, le filtrage et l’anonymat. Le plus souvent le serveur proxy est utilisé pour le web, il s’agit alors d’un proxy HTTP. Mais il peut exister des serveurs proxy pour chaque protocole applicatif.
+						</p>
+					</li>
+					<li>
+						<p class="pn1">
+							Répéteur  :
+						</p>
+						<p class="pn2">
+							Le répéteur reçoit des données par une interface de réception et les renvoie plus fort par l’interface d’émission. On parle aussi de relais en téléphonie et radiophonie.
+						</p>
+					</li>
+					<li>
+						<p class="pn1">
+							Le pont :
+						</p>
+						<p class="pn2">
+							C’est un équipement qui sert à relier deux réseaux utilisant le même protocole .Les ponts en plus de régénérer seulement les signaux électriques, comme les répéteurs, ils dupliquent les trames qui circulent d’un segment à l’autre et suppriment s bruits, les erreurs ou les trames mal formatées. Quand il reçoit la trame, le pont est en mesure d’identifier l’émetteur et le récepteur ; comme ça il dirige la trame directement vers la machine destinataire.
+						</p>
+					</li>
+					<li>
+						<p class="pn1">
+							La passerelle :
+						</p>
+						<p class="pn2">
+							C’est un système matériel et logiciel qui sert à relier deux réseaux utilisant deux protocoles et/ou architectures différents. Lorsqu’ un utilisateur distant contact un tel dispositif, celui-ci examine sa requête, et si celle-ci correspond aux règles que l’administrateur réseaux a défini, la passerelle crée un pont entre les deux réseaux. La passerelle transmet les informations indirectement car elle doit les traduire pour assurer la transmission tout en respectant les deux protocoles.
+						</p>
+					</li>
+					<li>
+						<p class="pn1">
+							Le modem :
+						</p>
+						<p class="pn2">
+							Le modem, ou modulateur-démodulateur, est un équipement qui sert à lier le réseau téléphonique au réseau informatique. Pour transmettre des données informatiques à distance, il utilise la ligne téléphonique comme support de transmission. Comme la ligne téléphonique utilise des signaux analogiques et que les réseaux informatiques utilise des signaux numériques, le modem doit traduire les signaux numériques en signaux analogiques et vis versa. Le modem utilise donc les techniques de modulation et de démodulation.
+						</p>
+					</li>
+				</ul>
+				<h4>
+					Et enfin, il existe plusieurs types de protocoles tels que :
+				</h4>
+				<ul>
+					<li>HTTP ;</li>
+					<li>FTP ;</li>
+					<li>SMTP etc...</li>
+				</ul>
+			</div>
+		</div>
+		<footer>
+			<br/>LAIGNEAU Antony
+		</footer>
+	</body>
+</html>	

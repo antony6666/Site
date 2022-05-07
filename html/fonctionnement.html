@@ -1,0 +1,100 @@
+<!DOCTYPE html>  <!-- Cette balise indique au navigateur que la page est écrite en HTML5 -->
+<html lang="fr">
+	<head>
+		<title>Le Fonctionnement</title>		<!-- Ces balises encadrent le titre qui va apparaitre dans l’onglet du navigateur. -->
+		<meta charset="utf-8">		<!-- On précise l’encodage permettant en particulier d’utiliser les lettres accentuées. -->
+		<link rel="stylesheet" href="MonStyle.css">
+	</head>
+	
+	
+	<body>
+		<header>
+			<div class="element">Année 2020-2021</div>
+			<div class="element">Internet et les Réseaux informatiques</div>
+			<div class="element">Lycée Saint-Sauveur</div>
+		
+		</header>
+		<nav>
+			<ul>
+				<li class="Accueil"><a href="Index.html">Accueil</a></li>
+				<li class="internet"><a href="#">Internet</a>		<!-- L'élément "href" ne ramène à aucune page. -->
+					<ul class="submenu">
+						<li><a href="historique.html">Son Histoire</a></li>		<!-- L'élément "href" ramène sur la page indiquée. -->
+						<li><a href="fonctionnement.html">Son Fonctionnement</a></li>
+						<li><a href="differents_serv.html">Les Différents Services Réalisés</a></li>
+						<li><a href="web.html">Le WEB</a></li>
+					</ul>
+				</li>
+				<li class="RI"><a href="#">Les Réseaux Informatiques</a>
+					<ul class="submenu">
+						<li><a href="notion.html">Les Notions de Réseaux</a></li>
+						<li><a href="adressage.html">Adressage</a></li>
+						<li><a href="hub.html">HUB</a></li>
+						<li><a href="diff_reseaux.html">Les Différents Réseaux</a></li>
+					</ul>
+				</li>
+				<li class="Conclusion"><a href="conclusion.html">Conclusion</a></li>
+			</ul>
+		</nav>
+		<div class="gen1">
+			<div class="gen2">
+				<h1>Son Fonctionnement</h1>
+				<p>
+					Internet est un fil qui relie des ordinateurs ensemble (net en anglais, cela désigne que c’est un fil virtuel).<br/>
+					Les serveurs sont des ordinateurs qui sont directement connectés à ce fil, et les sites Internet sont des fichiers qui sont stockés sur ces serveurs.<br/><br/>
+					Afin que chaque serveur puisse être identifié et atteint, ils possèdent tous une adresse IP unique et un même protocole, comme votre lieu de domicile ou votre numéro de téléphone. Comme une adresse IP est difficile à retenir, nous leur donnons aussi un nom, comme google.com, facebook.com, etc. C’est ce que l’on appelle un adresse URL.<br/><br/>
+					Votre ordinateur à la maison n’est donc pas un serveur, car il n’est pas directement connecté à Internet. Les ordinateurs, smartphones, tablettes, etc. que nous utilisons chaque jour sont des clients qui se connectent de manière indirecte à Internet via un fournisseur d’accès à Internet.<br/><br/>
+					Lorsque vous allez sur un site Web, votre ordinateur envoie une demande à un serveur et ce dernier vous renvoie alors les données correspondantes à votre demande. Votre demande et la réponse du serveur atteignent leur destination respective grâce à leur adresse IP unique et un système de signalisation efficace.<br/><br/>
+					Toutes les données qui transitent par Internet (sites Internet, Spotify, Netflix, emails, appels téléphoniques, etc.) sont fractionnées en petits morceaux qui s’appellent des paquets. Plus votre connexion à Internet via votre fournisseur d’accès à Internet est rapide, plus vous pouvez envoyer et recevoir un nombre de paquets important par seconde.
+				</p>
+					<div>
+						<table>
+								<tr>
+									<td>Internet </td>
+									<td>débit internet </td>
+									<td>temps de durer d'un téléchargement de 5Go </td>
+								</tr>
+								<tr>
+									<td>5G</td>
+									<td>10 Gbit/s</td>
+									<td>4s</td>
+								</tr>
+								<tr>
+									<td>fibre optique </td>
+									<td>1 Gbit/s </td>
+									<td>40s </td>
+								</tr>
+								<tr>
+									<td>4G </td>
+									<td>150 Mbit/s </td>
+									<td>267s </td>
+								</tr>
+								<tr>
+									<td>ADSL </td>
+									<td>12 Mbit/s </td>
+									<td>3 333s </td>
+								</tr>
+								<tr>
+									<td>3G </td>
+									<td>2 Mbit/s </td>
+									<td>20 000s </td>
+								</tr>
+								<tr>
+									<td>Edge </td>
+									<td>0.300Mbit/s </td>
+									<td>133 333s </td>
+								</tr>
+								
+								
+						</table>
+					</div>
+				
+			</div>
+			
+		</div>
+		
+		<footer>
+			<br/>LAIGNEAU Antony
+		</footer>
+	</body>
+</html>	

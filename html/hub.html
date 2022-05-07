@@ -1,0 +1,82 @@
+<!DOCTYPE html>  <!-- Cette balise indique au navigateur que la page est écrite en HTML5 -->
+<html lang="fr">
+	<head>
+		<title>Les HUBs</title>		<!-- Ces balises encadrent le titre qui va apparaitre dans l’onglet du navigateur. -->
+		<meta charset="utf-8">		<!-- On précise l’encodage permettant en particulier d’utiliser les lettres accentuées. -->
+		<link rel="stylesheet" href="MonStyle.css">
+	</head>
+	
+	
+	<body>
+		<header>
+			<div class="element">Année 2020-2021</div>
+			<div class="element">Internet et les Réseaux informatiques</div>
+			<div class="element">Lycée Saint-Sauveur</div>
+		
+		</header>
+		<nav>
+			<ul>
+				<li class="Accueil"><a href="Index.html">Accueil</a></li>
+				<li class="internet"><a href="#">Internet</a>		<!-- L'élément "href" ne ramène à aucune page. -->
+					<ul class="submenu">
+						<li><a href="historique.html">Son Histoire</a></li>		<!--  L'élément "href" ramène sur la page indiquée. -->
+						<li><a href="fonctionnement.html">Son Fonctionnement</a></li>
+						<li><a href="differents_serv.html">Les Différents Services Réalisés</a></li>
+						<li><a href="web.html">Le WEB</a></li>
+					</ul>
+				</li>
+				<li class="RI"><a href="#">Les Réseaux Informatiques</a>
+					<ul class="submenu">
+						<li><a href="notion.html">Les Notions de Réseaux</a></li>
+						<li><a href="adressage.html">Adressage</a></li>
+						<li><a href="hub.html">HUB</a></li>
+						<li><a href="diff_reseaux.html">Les Différents Réseaux</a></li>
+					</ul>
+				</li>
+				<li class="Conclusion"><a href="conclusion.html">Conclusion</a></li>
+			</ul>
+		</nav>
+		<div class="gen1">
+			<div class="gen2">
+				<h1>Les HUBs</h1>
+				<p>
+					Le hub, moyen de roue en anglais, aussi appelé concentrateur réseau.<br/>
+					Il sert à aider les petits réseaux locaux.<br/>
+					Les hubs USB peuvent être utilisés pour brancher plusieurs périphériques tels que stockage externe comme les clés USB et les disques miniatures, cartes mémoire, écouteurs, microphones et écouteurs, les imprimantes et les scanners. L'ordinateur «découvre» en tant que périphériques externes.<br/>
+					Il permet de connecter plusieurs machines entre elles.
+					 <img src="hub.jpg" alt="Exemple d'un hub" class="hub"> 
+				</p>
+				<article>
+					<h4>Il y a différents types de concentrateurs :</h4>
+					<ul>
+						<li>
+							<p class="hub1">
+								Les concentrateurs actifs :
+							</p>
+							<p class="hub2">
+								Ils sont alimentés et qui permettent de répéter le signal sur les différents ports.
+							</p>
+						</li>
+						<li>
+							<p class="hub1">
+								les concentrateurs passifs :
+							</p>
+							<p class="hub2">
+								Ils permettent de diffuser le signal aux hôte sans amplification.
+							</p>
+						</li>
+					</ul>
+				</article><br/>
+				<p>
+					Les hubs peuvent être reliés entre eux afin d'avoir un plus grand nombre de machines connectées. On parle alors de connexion en cascade. Pour ce faire il suffit de connecter les hubs à l'aide d'un câble croisé, c'est à dire un câble reliant les connecteurs de réception d'une extrémité aux connecteurs de réception de l'autre.<br/>
+					Les concentrateurs sont en général dotés d'un port spécial appelé "uplink" permettant d'utiliser un câble droit pour connecter deux hubs entre eux.<br/>
+					Il existe également des hubs capables de croiser ou de décroiser automatiquement leurs ports selon qu'il est relié à un hôte ou à un hub.
+				</p>
+				<p><img src="hub2.gif" alt="Exemple d'un hub" class="hub"></p>
+			</div>
+		</div>
+		<footer>
+			<br/>LAIGNEAU Antony
+		</footer>
+	</body>
+</html>	

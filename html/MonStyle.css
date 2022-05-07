@@ -1,0 +1,340 @@
+body{
+	font-family: Arial;
+	margin: 0px;
+	padding: 0px;
+}
+
+header :nth-child(2){
+	font-size: 40px;
+}
+	
+nav{
+	width: 100%;
+	background-color: #424558;
+	font-family: 'Source code pro', Calibri, serif;
+}
+
+nav > ul{				/* On applique seulement sur les éléments "ul" qui sont en contact direct avec l'élément "nav" */
+	margin: 0px;
+	padding: 0px;
+}
+
+nav > ul::after{		/* On applique l'élément "after" car les éléments enfants "li" sont flottant*/
+	content:"";
+	display: block;
+	clear: both;
+}
+
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: #FFF;
+}
+
+nav > ul > li:hover a{					/* Cela s'applique que quand la souris passe dessus grâce à l'élément "hover" */
+	padding: 15px 30px 20px 30px;
+}
+
+nav li{									/* Cela s'applique à tous les éléments "li" présent dans l'élément "nav" */
+	list-style-type: none;
+}
+
+.submenu{
+	display: none;
+	
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+}
+
+nav li:hover .submenu{				/* Pour afficher les sous menus quand un utilisateur passe sa souris sur l'onglet de menu correspondant */
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+.submenu li{
+	border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+		padding: 15px 30px;
+		font-size: 13px;
+		color: #222538;
+		width: 270px;
+}
+
+.internet:hover{
+	border-top: 5px solid #e44d26;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.RI:hover{
+	border-top: 5px solid #0070bb;
+	background-color: RGBa(000, 112, 192, 0.15);
+}
+
+.Accueil:hover{
+	border-top: 5px solid #BBB;
+	background-color: RGBa(220, 220, 220, 0.15);
+}
+
+.internet .submenu{
+	background-color: RGB(230, 100, 40);
+}
+
+.RI .submenu{
+	background-color: RGB(000, 160, 240);
+}
+
+.submenu li:hover a{
+	color: #EEE;
+	font-weight: bold;
+}
+
+.internet .submenu li:hover{
+	background-color: RGB(210, 77, 60);
+}
+
+.RI .submenu li:hover{
+	background-color: RGB(000, 115, 200);
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+	background-color: #CFCFCF;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	padding: 1% 1%;
+}
+
+.gen1{
+	display: flex;
+	background-color: RGB(230, 230, 230);
+	min-height: 100vh;
+}
+
+.gen2{
+	display: flex;
+	background-color: white;
+	flex-direction: column;
+	height: 100%;
+	margin-left: 22%;
+	margin-right: 22%;
+	opacity: 1;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
+	min-height: 100vh;
+}
+
+footer{
+	font-size: 13px;
+	background-color: #CCC;
+}
+.topo{
+	margin-left: 45%;
+	margin-top: 3%;
+	width: 35%;
+}
+.res{
+	margin-left: 26%;
+	margin-top: 4%;
+	width: 50%;
+}
+
+.hub{
+	margin-left: 26%;
+	margin-top: 4%;
+	width: 40%;
+}
+
+.web{
+	margin-left: 30%;
+	margin-top: 8%;
+	width: 30%;
+}
+
+.pn1{
+	color: red;
+	font-size: 17px;
+}
+
+.pn2{
+	margin-left: 2%;
+	margin-top: -1%;
+	font-size: 15px;
+}
+
+.li1{
+	font-size: 17px;
+	color: red;
+}
+
+.li2{
+	font-size: 15px;
+	margin-top: -1%;
+}
+
+.ip{
+	color: red;
+	font-size: 17px;
+}
+
+.ip2{
+	margin-left: 3%;
+	margin-top: -1%;
+	font-size: 15px;
+}
+
+.class_g{
+	color: red;
+	font-size: 17px;
+}
+
+.class_s{
+	margin-left: 3%;
+	margin-top: -1%;
+	font-size: 15px;
+}
+
+.hub1{
+	color: red;
+	font-size: 17px;
+	margin-top: -0.5%;
+}
+
+.hub2{
+	margin-left: 3%;
+	margin-top: -1%;
+	font-size: 15px;
+}
+
+.dif_res1{
+	font-size: 17px;
+	color: red;
+}
+
+.dif_res2{
+	margin-left: 3%;
+	margin-top: -1%;
+	font-size: 15px;
+}
+
+h1{
+	text-align: center;
+	border: medium solid red;
+	background-color: RGB(220, 220, 220);
+	margin-bottom: 5%;
+}
+
+#conteneur{
+	display: flex;
+	flex-direction: column;
+}
+
+.img1_1{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 5%;
+}
+
+.index1{
+	border: medium solid lightblue;
+	padding: 6% 1% 0% 1%;
+	margin-left: 3%;
+}
+
+.img2_1{
+	width: 500px;
+	margin: 3% 5% 3% 1%;
+}
+
+.img1_2{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10%;
+}
+
+.source0{
+	border: medium solid lightblue;
+	padding: 1% 1.5% 1% 1%;
+	margin: 1% 2% 1% 2%;
+}
+
+.img2_2{
+	width: 450px;
+	margin: 2% 2% 2% 2%;
+}
+
+.gen1 .gen2 #conteneur .img1_2 .source0 ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+.gen1 .gen2 #conteneur .img1_2 .source0 ul li a:hover{
+	text-decoration: underline;
+	color: lightblue;
+}
+
+h4{
+	margin-bottom: -0.5%;
+}
+h5{
+	margin-left: 8%; 
+	
+}
+table
+{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+}
+td
+{
+    border: 1px solid black;
+}
+@-webkit-keyframes sliderLeft{
+	
+	20%{left:0%;}
+	25%{left:-100%;}
+	45%{left:-100%;}
+	50%{left:-200%;}
+	70%{left:-200%;}
+	75%{left:-300%;}
+	95%{left:-300%;}
+	100%{left:-400%;}
+	
+
+}
+
+
+#diaporama{
+	max-width:850px;
+	height:1000px;
+	overflow:hidden;
+	margin: 0 auto;
+	border: 25px solid white;
+}	
+	
+
+
+#diaporama figure{
+	position: relative;
+	width: 500%;
+	-webkit-animation: 15s sliderLeft infinite;
+
+}
+
+#diaporama figure img{
+	width: 20%;
+	float: left;
+}
+	
